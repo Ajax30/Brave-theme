@@ -1,0 +1,15 @@
+@import './variables';
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.pagination {
+  margin: 0;
+
+  .page-link {
+    font-size: 14px;
+  }
+}
