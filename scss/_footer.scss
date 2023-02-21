@@ -1,0 +1,18 @@
+@import './variables';
+
+.site-footer-wrapper {
+  margin-top: auto;
+}
+
+.footer-copyright {
+  padding: 15px 0;
+  background: $dark-gray;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  p {
+    margin: 0;
+    color: $white;
+    line-height: 1;
+    font-size: $smaller-font;
+  }
+}

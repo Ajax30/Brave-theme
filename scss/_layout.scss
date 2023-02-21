@@ -1,0 +1,10 @@
+// Variables
+$body-bg: #f8fafc;
+
+#app {
+  background: $body-bg;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

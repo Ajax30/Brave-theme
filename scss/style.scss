@@ -1,0 +1,15 @@
+// Import fonts
+@import  './fonts';
+
+//  Overwrite default scheme
+@import  './_overwrites';
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom styles
+@import  './_layout';
+@import  './_navbar'; 
+@import './_footer';
+@import  './_typography';
+@import './_buttons';

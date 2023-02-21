@@ -1,0 +1,128 @@
+@import './variables';
+
+.navbar {
+  box-shadow: 0 3px 7px 0 rgba(21, 30, 38, 0.3);
+
+  .nav-link {
+    color: $white;
+    font-size: $smaller-font;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .search_form {
+    max-width: 767px;
+
+    .search-box {
+      background: $metal-gray;
+      border: 1px solid rgba(255, 255, 255, .04);
+      box-shadow: none !important;
+      color: $white;
+    }
+  
+    button[type=submit] {
+      border: 1px solid rgba(255, 255, 255, .04);
+      border-left: 0;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      background: $metal-gray;
+      color: $medium-gray;
+      box-shadow: none !important;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+    top: 49px;
+    border: none;
+    background: transparent;
+
+    &:after {
+      display: none;
+      z-index: 1021;
+      position: absolute;
+      border-style: solid;
+      border-width: 0 9px 10px;
+      content: "";
+      height: 0;
+      width: 0;
+      right: auto;
+      top: -8px;
+      left: 7px;
+      border-width: 0 10px 8px;
+      border-color: transparent transparent white;
+    }
+    &:before {
+      display: none;
+      z-index: 1021;
+      position: absolute;
+      border-style: solid;
+      border-width: 0 9px 10px;
+      content: "";
+      height: 0;
+      width: 0;
+      right: auto;
+      top: -10px;
+      left: 8px;
+      border-color: transparent transparent rgba(0, 0, 0, .1);
+    }
+
+    .dropdown-item {
+      color: $white;
+      padding-left: .25rem;
+      padding-right: .25rem;
+      font-size: $smaller-font;  
+      &:hover {
+        background: rgba(0, 0, 0, .05);
+      }
+    }
+  }
+
+  .button-nav {
+    .nav-item {
+      margin: 2px 0;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+	.navbar {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+	.navbar {
+    .btn {
+      display: inline-block;
+    }
+
+    .button-nav {
+      .nav-item {
+        margin: 0 2px;
+        font-size: $smaller-font;
+      }
+    }
+
+		.dropdown-menu {
+      background: $white;
+      color: $white;
+      &:after,
+      &:before {
+        display: inline-block;
+      }
+
+      .dropdown-item {
+        padding-left: .5rem;
+        padding-right: .5rem;  
+        color: $default-text-color;
+      }
+    }
+	}
+}
