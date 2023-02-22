@@ -1,0 +1,72 @@
+/* Forms */
+.form-group {
+	margin-bottom: 22px;
+	position: relative;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.error-message {
+		margin: 0;
+		position: absolute;
+		right: 5px;
+		bottom: -13px;
+		color: $dark-red;
+		font-size: 11px;
+	}
+	label.error {
+		margin: 0;
+		position: absolute;
+		right: 5px;
+		bottom: -13px;
+		color: $light-red;
+		font-size: 11px;
+	}
+	.error {
+		border-color: $light-red;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+}
+.input-group {
+	.error-message {
+		margin: 0;
+		position: absolute;
+		right: 5px;
+		bottom: -13px;
+		color: $light-red;
+		font-size: 11px;
+	}
+	.search-error {
+		margin: 0;
+		position: absolute;
+		bottom: 1px;
+		right: 48px;
+		color: $light-red;
+		font-size: 11px;
+	}
+}
+.error-messages {
+	p {
+		margin: 0;
+		position: absolute;
+		right: 5px;
+		bottom: -13px;
+		color: $light-red;
+		font-size: 11px;
+	}
+}
+.has-error {
+	.form-control {
+		border-color: $light-red;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		&:focus {
+			border-color: $light-red;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px $lighter-red;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px $lighter-red;
+		}
+	}
+	.text {
+		color: $dark-red !important;
+	}
+}

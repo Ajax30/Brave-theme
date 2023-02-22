@@ -1,0 +1,50 @@
+* {
+  color: #000 !important;
+}
+
+.right-half {
+  display: none !important;
+}
+
+#comments_container {
+  display: none !important;
+}
+
+.comment-form-wrapper {
+  display: none !important;
+}
+
+#article-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.article-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.left-half {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.article-meta {
+  border: none !important;
+}
+
+p {
+  line-height: 1.6 !important;
+  font-size: 14pt !important;
+  widows: 2;
+  orphans: 1;
+}
+
+.article-content a:after {
+  content: "( " attr(href) " )";
+}
+
+/*# sourceMappingURL=print.css.map */

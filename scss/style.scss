@@ -9,7 +9,12 @@
 
 // Custom styles
 @import  './_layout';
-@import  './_navbar'; 
+@import  './_navbar';
+@import  './_sidebar.scss';
 @import './_footer';
+@import './_pagination';
 @import  './_typography';
 @import './_buttons';
+@import  './forms.scss';
+@import './_articles-list';
+@import './_article.scss';

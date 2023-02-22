@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Brave CMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div id="app">
+  
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-expand-md">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sports</a></li>
+                <li><a class="dropdown-item" href="#">Life style</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="search_form w-100 pe-md-2 mx-auto" role="search">
+            <div class="input-group">
+              <input class="form-control search-box" type="search" placeholder="Search articles..." aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn" type="submit">
+                  <i class="fa-solid fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <ul class="navbar-nav button-nav navbar-expand-md mr-auto px-0 px-md-2 pl-md-1 text-nowrap">
+           <li class="nav-item">
+            <a href="#" class="btn btn-sm btn-success">
+              <i class="fa-solid fa-right-to-bracket"></i> Login
+            </a>
+           </li>
+           <li class="nav-item">
+            <a href="#" class="btn btn-sm btn-success">
+              <i class="fa-solid fa-user-plus"></i> Register
+            </a>
+           </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 col-xl-9">
+          <main class="content" id="article-content">
+            <h2 class="article-title display-4 text-center text-md-start">Who loves a butterfly?</h2>
+            <div class="row article-meta">
+              <div class="left-half col-sm-12 col-sm-7 col-lg-8">
+                <span class="author">
+                <a href="#">
+                  <img src="assets/images/razvan.jpg" alt="Razvan Zamfir" class="rounded-circle ">
+                  <span class="pl-1">by Razvan Zamfir</span>
+                </a>
+                </span> 
+                <strong>·</strong>
+                <span class="date">Nov 19, 2022</span>
+              </div>
+              <div class="right-half col-sm-12 col-sm-5 col-lg-4">
+                <a class="comments" id="comments_status" href="#" title="2 comments"><i class="fa fa-comments mr-1"></i> 2 comments</a> <strong>·</strong>
+                <a href="#" id="print_btn" onclick="printJS({ printable: 'article-content', type: 'html', css: ['./assets/css/style.css', './assets/css/print.css'] })"><i class="fa fa-print"></i> Print</a>
+              </div>
+            </div>
+            <div class="post-thumbnail">
+              <img src="assets/images/butterfly2.jpg" alt="Who loves a butterfly?">
+            </div>
+            <div class="article-content">
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+              <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+            </div>
+            
+            <div class="comments mt-4" id="comments_container">
+              <div class="card bg-light mb-3 comment">
+                <h5 class="card-header p-2">
+                  <span class="row">
+                  <span class="col-sm-6 text-dark">Razvan Zamfir says:</span>
+                  <span class="col-sm-6 text-dark d-none d-sm-block text-end">Nov 28, 2022 at 23:32:15</span>
+                  </span>
+                </h5>
+                <div class="card-body bg-white p-2">
+                  <p>Mountains, she had a last view back</p>
+                </div>
+              </div>
+              <div class="card bg-light mb-3 comment">
+                <h5 class="card-header p-2">
+                  <span class="row">
+                  <span class="col-sm-6 text-dark">Razvan Zamfir says:</span>
+                  <span class="col-sm-6 text-dark d-none d-sm-block text-end">Nov 29, 2022 at 00:55:37</span>
+                  </span>
+                </h5>
+                <div class="card-body bg-white p-2">
+                  <p>Post comment validation in AngularJS.</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment-form-wrapper">
+              <h3 class="comment-form-title">Leave a comment</h3>
+              <form action="#" id="commentForm" class="comment-form" method="post" accept-charset="utf-8" novalidate="novalidate">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name" data-rule-required="true">
+                </div>
+                <div class="form-group ">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email" data-rule-required="true">
+                </div>
+                <div class="form-group ">
+                  <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Comment" data-rule-required="true"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Comment" class="btn btn-md btn-success w-100">
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+          <aside class="sidebar">
+            <div class="tabbed-sidebar">
+              <div class="tabbed-heading">
+                <ul class="nav nav-tabs" role="tablist" data-bs-tabs="tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#newest_posts" role="tab" data-bs-toggle="tab">Top</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#authors_list" role="tab" data-bs-toggle="tab">Authors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#categories" role="tab" data-bs-toggle="tab">Categories</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="tab-content">
+                <div class="tab-pane active" id="newest_posts">
+                  <ul class="list-unstyled sidebar-list d-table">
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/castel.jpg" alt="Europe's most beautiful castles" class="img-thumbnail">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Europe's most beautiful castles</a></h3>
+                        <p>Sentiments of surrounded friendship connection. Me or…</p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/butterfly2.jpg" alt="Who loves a butterfly?" class="img-thumbnail">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Who loves a butterfly?</a></h3>
+                        <p>Sentiments of surrounded friendship connection. Me or…</p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/code.jpg" alt="Learn to code" class="img-thumbnail">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Learn to code</a></h3>
+                        <p>Sentiments of surrounded friendship connection. Me or…</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="authors_list">
+                  <ul class="list-unstyled sidebar-list d-table">
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                        <img src="assets/images/razvan.jpg" alt="Razvan Zamfir" class="img-thumbnail rounded-circle">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Razvan Zamfir</a></h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the…</p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                        <img src="assets/images/kayden.jpg" alt="Kayden Schiller" class="img-thumbnail rounded-circle">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Jane Smith</a></h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the…</p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                        <img src="assets/images/carmen.jpg" alt="Carmen Romaguera" class="img-thumbnail rounded-circle">
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Alice Star</a></h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you…</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="categories">
+                  <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Uncategorised</span>
+                      <span class="badge">26</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Technology</span>
+                      <span class="badge">3</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Business</span>
+                      <span class="badge">4</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Sport</span>
+                      <span class="badge">0</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside> 
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-footer-wrapper">
+      <div class="footer-copyright">
+        <p class="text-center">© My Company. All rights reserved</p>
+      </div>
+    </div>
+
+  </div> 
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/print.min.js"></script>
+</body>
+</html>

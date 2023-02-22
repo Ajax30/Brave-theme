@@ -1,5 +1,6 @@
 // Color scheme
-$primary:       #2563eb;
+$white:         #fff;
+$primary:       #2c82e6;
 $success:       #008057;
 $danger:        #bc133d;
 $dark:          #1B192F;
@@ -10,3 +11,9 @@ $theme-colors: (
   "danger":     $danger,
   "dark":       $dark
 );
+
+//  Set link color
+$link-color: $success;
+
+// Pagination
+$pagination-active-bg: $success !default;

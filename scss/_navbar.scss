@@ -83,8 +83,12 @@
   }
 
   .button-nav {
+    margin-top: 3px;
     .nav-item {
       margin: 2px 0;
+      a {
+        min-width: 100px;
+      }
     }
   }
 }
@@ -104,6 +108,7 @@
     }
 
     .button-nav {
+      margin-top: 0;
       .nav-item {
         margin: 0 2px;
         font-size: $smaller-font;
