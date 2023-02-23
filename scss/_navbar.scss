@@ -35,9 +35,8 @@
 
   .dropdown-menu {
     padding: 0;
-    border-radius: 0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
-    top: 49px;
+    top: 46px;
     border: none;
     background: transparent;
 
@@ -118,6 +117,7 @@
 		.dropdown-menu {
       background: $white;
       color: $white;
+      border-radius: 0 0 0.125rem 0.125rem;
       &:after,
       &:before {
         display: inline-block;
