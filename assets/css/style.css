@@ -10809,6 +10809,20 @@ h4,
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
+.article-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #808080;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  color: #1c232c;
+  border-bottom: 1px solid #ddd;
+}
+
 /* Forms */
 .form-group {
   margin-bottom: 22px;
@@ -10969,12 +10983,6 @@ h4,
   overflow: auto;
   background: #fff;
   border: 1px solid #ddd;
-}
-
-.article-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
-  color: #808080;
 }
 
 .post-thumbnail {
