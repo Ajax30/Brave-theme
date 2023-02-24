@@ -10893,6 +10893,18 @@ h4,
   color: #6e0000 !important;
 }
 
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+.centered-content h1, .centered-content .h1 {
+  font-size: 7.5rem;
+  font-weight: 900;
+  color: #1c232c;
+}
+
 .articles-grid {
   margin-top: 25px;
 }
