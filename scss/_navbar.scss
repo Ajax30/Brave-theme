@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 .navbar {
   box-shadow: 0 3px 7px 0 rgba(21, 30, 38, 0.3);
@@ -25,8 +26,6 @@
     button[type=submit] {
       border: 1px solid rgba(255, 255, 255, .04);
       border-left: 0;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
       background: $metal-gray;
       color: $medium-gray;
       box-shadow: none !important;
@@ -117,7 +116,7 @@
 		.dropdown-menu {
       background: $white;
       color: $white;
-      border-radius: 0 0 0.125rem 0.125rem;
+      @include border-radius(0 0 0.125rem 0.125rem);
       &:after,
       &:before {
         display: inline-block;
