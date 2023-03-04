@@ -11,13 +11,15 @@
 
   <div id="app">
   
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Brave CMS">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="mainNavigation">
           <ul class="navbar-nav pe-md-1 navbar-expand-md">
             <li class="nav-item">
               <a class="nav-link" href="#">Pages</a>
@@ -29,13 +31,13 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu categories">
                 <li><a class="dropdown-item" href="#">Sports</a></li>
                 <li><a class="dropdown-item" href="#">Life style</a></li>
               </ul>
             </li>
           </ul>
-          <form class="search_form w-100 pe-md-2 mx-auto" role="search">
+          <form class="search_form w-100 pe-md-2 mx-auto mt-2 mt-md-0" role="search">
             <div class="input-group">
               <input class="form-control search-box" type="search" placeholder="Search articles..." aria-label="Search">
               <div class="input-group-append">
