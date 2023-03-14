@@ -10842,6 +10842,7 @@ h4,
 
 .social-buttons {
   padding-top: 1rem;
+  margin-bottom: 0;
 }
 .social-buttons .btn {
   color: #fff !important;
