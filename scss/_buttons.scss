@@ -7,6 +7,7 @@
   padding-top: 1rem;
   .btn {
     color: $white !important;
+    white-space: nowrap;
     @include border-radius(.125rem);
 
     &.facebook {
