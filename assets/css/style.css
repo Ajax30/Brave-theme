@@ -10838,7 +10838,29 @@ h4,
 .btn.rounded-end {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-} /* Forms */
+}
+
+.social-buttons {
+  padding-top: 1rem;
+}
+.social-buttons .btn {
+  color: #fff !important;
+  -webkit-border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  -ms-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+}
+.social-buttons .btn.facebook {
+  background: #306199;
+}
+.social-buttons .btn.twitter {
+  background: #26c4f1;
+}
+.social-buttons .btn.linkedin {
+  background: #005983;
+}
+
+/* Forms */
 .form-group {
   margin-bottom: 22px;
   position: relative;
