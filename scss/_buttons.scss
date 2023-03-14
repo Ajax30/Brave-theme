@@ -2,3 +2,22 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
+
+.social-buttons {
+  padding-top: 1rem;
+  .btn {
+    color: $white !important;
+    white-space: nowrap;
+    @include border-radius(.125rem);
+
+    &.facebook {
+      background: #306199;
+    }
+    &.twitter {
+      background: #26c4f1;
+    }
+    &.linkedin {
+      background: #005983;
+    }
+  }
+}

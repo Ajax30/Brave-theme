@@ -1,12 +1,9 @@
 * {
   color: #000 !important;
 }
-.right-half {
-  display: none !important;
-}
-#comments_container {
-  display: none !important;
-}
+#comments_container,
+.right-half,
+.social-container,
 .comment-form-wrapper {
   display: none !important;
 }
