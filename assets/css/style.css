@@ -3074,7 +3074,7 @@ textarea.form-control-lg {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
-  --bs-btn-border-radius: 0.25rem;
+  --bs-btn-border-radius: 0.125rem;
 }
 
 .fade {
@@ -10803,8 +10803,14 @@ body {
 .pagination {
   margin: 0;
 }
-.pagination .page-link {
+.pagination .page-item .page-link {
   font-size: 14px;
+}
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
 }
 
 body {

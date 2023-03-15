@@ -7,7 +7,16 @@
 .pagination {
   margin: 0;
 
-  .page-link {
-    font-size: 14px;
+  .page-item {
+    .page-link {
+      font-size: 14px;
+    }
+    &:first-child,
+    &:last-child {
+      .page-link {
+        @include border-radius(.2rem);
+      }
+    }
   }
+
 }
