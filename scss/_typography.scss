@@ -11,10 +11,16 @@ h4 {
   font-family: $heading-font;
 }
 
+.category-name {
+  font-weight: 900;
+  margin-top: 20px;
+}
+
 .article-title {
 	font-size: 2.5rem;
 	margin-bottom: .75rem;
 	color: lighten($dark-gray, 10%);
+  font-weight: 900;
 }
 
 .page-title {

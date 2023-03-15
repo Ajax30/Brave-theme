@@ -10821,10 +10821,16 @@ h4,
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
+.category-name {
+  font-weight: 900;
+  margin-top: 20px;
+}
+
 .article-title {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
   color: #303c4b;
+  font-weight: 900;
 }
 
 .page-title {
@@ -10957,7 +10963,7 @@ h4,
 }
 
 .articles-grid {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .articles-grid > [class*=col-] {
   display: flex;

@@ -3,7 +3,7 @@
 @import './mixins';
 
 .articles-grid {
-	margin-top: 25px;
+	margin-top: 20px;
 	>[class*="col-"] {
 		display: flex;
 		flex-direction: column;
