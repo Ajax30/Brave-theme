@@ -1,0 +1,14 @@
+@import './variables';
+
+.newsletter {
+	margin-top: 20px;
+  padding: 15px;
+	border: 1px solid $light-gray;
+  background: $white; 
+
+  h3 {
+    font-size: $medium-font;
+    color: $accent-gray;
+    font-weight: 600;
+  }
+}
