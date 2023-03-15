@@ -14,7 +14,7 @@
 		display: flex;
 		flex-direction: column;
 		background: $white;
-    @include border-radius(.25rem);
+    @include border-radius(0 0 .125rem .125rem);
 		transition: all 0.3s ease-in-out 0s;
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.11) 0px 1px 2px;
 		&:hover {
@@ -23,7 +23,7 @@
 	}
 	.thumbnail {
 		overflow: hidden;
-    @include border-radius(.25rem .25rem 0 0);
+    @include border-radius(.125rem .125rem 0 0);
 		img {
 			display: block;
 			width: 100%;
