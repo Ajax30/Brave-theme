@@ -1,10 +1,6 @@
-// Color scheme
-$white:         #fff;
-$primary:       #2c82e6;
-$success:       #008057;
-$danger:        #bc133d;
-$dark:          #1B192F;
+@import './variables';
 
+// Set theme colors
 $theme-colors: (
   "primary":    $primary,
   "success":    $success,
