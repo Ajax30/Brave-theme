@@ -75,6 +75,7 @@ main {
   overflow: hidden;
 	.card-header {
 		font-size: $smaller-font;
+    background: $body-bg;
 	}
 	p {
 		font-size: $smaller-font;
