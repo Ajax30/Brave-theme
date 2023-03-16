@@ -10698,6 +10698,8 @@ body {
 .nav-tabs {
   display: flex;
   border-bottom: none;
+  overflow: hidden;
+  margin-bottom: -1px;
 }
 .nav-tabs li {
   -webkit-flex: 1;
@@ -10706,13 +10708,14 @@ body {
 }
 .nav-tabs .nav-link {
   border: 1px solid #ddd;
+  font-weight: 600;
   font-size: 0.9rem;
   color: #566f86;
-  font-weight: 600;
 }
 .nav-tabs .nav-link.active {
-  border-color: #ddd #ddd #fff;
   color: #008057;
+  background: #fff;
+  border-bottom-color: #fff;
 }
 
 .tab-content {
