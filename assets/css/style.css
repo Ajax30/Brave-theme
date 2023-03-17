@@ -10898,11 +10898,11 @@ h4,
   position: absolute;
   right: 5px;
   bottom: 0;
-  color: #b42d3a;
+  color: #b43340;
   font-size: 10px;
 }
 .form-group .error {
-  border-color: #b42d3a;
+  border-color: #b43340;
 }
 
 .input-group .error-message {
@@ -10910,7 +10910,7 @@ h4,
   position: absolute;
   right: 5px;
   bottom: -13px;
-  color: #b42d3a;
+  color: #b43340;
   font-size: 10px;
 }
 .input-group .search-error {
@@ -10918,7 +10918,7 @@ h4,
   position: absolute;
   bottom: 1px;
   right: 48px;
-  color: #b42d3a;
+  color: #b43340;
   font-size: 10px;
 }
 
@@ -10927,17 +10927,17 @@ h4,
   position: absolute;
   right: 5px;
   bottom: -13px;
-  color: #b42d3a;
+  color: #b43340;
   font-size: 10px;
 }
 
 .has-error .form-control {
-  border-color: #b42d3a;
+  border-color: #b43340;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-error .form-control:focus {
-  border-color: #b42d3a;
+  border-color: #b43340;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
@@ -11011,7 +11011,7 @@ h4,
   position: relative;
   left: -19px;
   top: -3px;
-  background: #b42d3a;
+  background: #b43340;
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
 }
