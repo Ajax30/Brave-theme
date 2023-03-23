@@ -21415,6 +21415,10 @@ main .img-thumbnail.float-left {
   width: 40px;
   height: 40px;
 }
+.article-meta .date {
+  display: inline-block;
+  margin-top: -2px;
+}
 
 #print_btn .fa {
   margin-right: 3px;
