@@ -11,10 +11,14 @@
     .page-link {
       font-size: 14px;
     }
-    &:first-child,
+    &:first-child {
+      .page-link {
+        @include border-radius(.2rem 0 0 .2rem);
+      }
+    }
     &:last-child {
       .page-link {
-        @include border-radius(.2rem);
+        @include border-radius(0 .2rem .2rem 0);
       }
     }
   }

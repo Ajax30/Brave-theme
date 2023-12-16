@@ -85,3 +85,31 @@
 		text-align: justify;
 	}
 }
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  h1 {
+    order: 2; 
+    margin: 0 0 0 5px; 
+    font-size: 1.75rem
+  };
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
+
+.bio {
+  color: $accent-gray;
+  border-left: 4px solid $medium-gray;
+  margin: 0.75em 0 2rem 0;
+  padding: 0 0.75em;
+  @media (min-width: 992px) {
+    width: 60%;
+  }
+}
+
+
