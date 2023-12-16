@@ -21370,17 +21370,17 @@ h4,
   text-align: justify;
 }
 
-.author {
+div.author {
   display: flex;
   align-items: center;
   margin: 20px 0 0 0;
 }
-.author h1, .author .h1 {
+div.author h1, div.author .h1 {
   order: 2;
   margin: 0 0 0 5px;
   font-size: 1.75rem;
 }
-.author img {
+div.author img {
   height: 40px;
   width: auto;
 }
