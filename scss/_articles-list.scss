@@ -93,11 +93,10 @@ div.author {
   h1 {
     order: 2; 
     margin: 0 0 0 5px; 
-    font-size: 1.75rem
-  };
-
+    font-size: 2rem
+  }
   img {
-    height: 40px;
+    height: 44px;
     width: auto;
   }
 }
@@ -107,8 +106,9 @@ div.author {
   border-left: 4px solid $medium-gray;
   margin: 0.75em 0 2rem 0;
   padding: 0 0.75em;
+  font-size: 14px;
   @media (min-width: 992px) {
-    width: 60%;
+    width: 70%;
   }
 }
 
