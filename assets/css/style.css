@@ -21185,7 +21185,7 @@ h4,
   background: #26c4f1;
 }
 .social-buttons .btn.linkedin {
-  background: #005983;
+  background: #0a66c2;
 }
 
 /* Forms */
@@ -21373,7 +21373,7 @@ h4,
 div.author {
   display: flex;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 6px;
 }
 div.author h1, div.author .h1 {
   order: 2;
