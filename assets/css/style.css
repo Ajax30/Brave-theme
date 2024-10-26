@@ -20864,6 +20864,10 @@ body {
 .navbar .navbar-brand {
   padding: 0;
 }
+.navbar .navbar-brand img {
+  height: 30px;
+  width: auto;
+}
 .navbar .nav-link {
   color: #fff;
   font-size: 0.9rem;
@@ -21477,6 +21481,13 @@ main .img-thumbnail.float-left {
 .comment .card-header {
   font-size: 0.9rem;
   background: #f8fafc;
+  padding: 5px;
+}
+.comment .avatar img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
 }
 .comment p {
   font-size: 0.9rem;
