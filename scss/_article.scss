@@ -77,6 +77,10 @@ main {
 }
 .comment {
   overflow: hidden;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 	.card-header {
 		font-size: $smaller-font;
     background: $body-bg;

@@ -21477,6 +21477,10 @@ main .img-thumbnail.float-left {
 
 .comment {
   overflow: hidden;
+  margin-bottom: 15px;
+}
+.comment:last-child {
+  margin-bottom: 0;
 }
 .comment .card-header {
   font-size: 0.9rem;
