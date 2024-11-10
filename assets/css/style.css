@@ -21497,6 +21497,22 @@ main .img-thumbnail.float-left {
   font-size: 0.9rem;
 }
 
+.comment-actions {
+  display: flex;
+  justify-content: right;
+  margin: 0;
+}
+.comment-actions li {
+  margin-right: 10px;
+}
+.comment-actions li:last-child {
+  margin-right: 0;
+}
+.comment-actions a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   .right-half {
     display: none !important;
