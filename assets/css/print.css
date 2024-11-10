@@ -4,8 +4,10 @@
 
 #comments_container,
 .right-half,
+.tag-cloud,
 .social-container,
-.comment-form-wrapper {
+.comment-form-wrapper,
+.comments {
   display: none !important;
 }
 
