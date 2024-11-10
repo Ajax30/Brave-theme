@@ -21474,8 +21474,9 @@ main .img-thumbnail.float-left {
   flex-wrap: wrap;
   margin-top: 10px;
 }
-.tag-cloud span {
+.tag-cloud a {
   display: inline-block;
+  text-decoration: none;
   padding: 6px 10px;
   font-weight: 600;
   line-height: 1;

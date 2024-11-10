@@ -85,8 +85,9 @@ main {
   flex-wrap: wrap;
   margin-top: 10px;
 
-  span {
+  a {
     display: inline-block;
+    text-decoration: none;
     padding: 6px 10px;
     font-weight: 600;
     line-height: 1;
