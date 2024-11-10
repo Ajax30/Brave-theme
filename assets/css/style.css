@@ -21436,7 +21436,8 @@ main .img-thumbnail.float-left {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.article-meta .left-half, .article-meta .right-half {
+.article-meta .left-half,
+.article-meta .right-half {
   display: flex;
   align-items: center;
   color: #808080;
@@ -21465,6 +21466,25 @@ main .img-thumbnail.float-left {
 
 #print_btn .fa {
   margin-right: 3px;
+}
+
+/* Tag cloud*/
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.tag-cloud span {
+  display: inline-block;
+  padding: 6px 10px;
+  font-weight: 600;
+  line-height: 1;
+  color: #919191 !important;
+  border: 2px solid #ddd;
+  color: inherit;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 /* Comments */
