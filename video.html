@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brave CMS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/lib/cookieconsent/css/cookies.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/lib/cookieconsent/js/cookieconsent.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Brave CMS" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+          aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav pe-md-1 navbar-expand-md">
+            <li class="nav-item">
+              <a class="nav-link" href="page.html">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu categories">
+                <li>
+                  <a class="dropdown-item" href="category.html">Sports</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Life style</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="search_form w-100 pe-md-2 mx-auto mt-2 mt-md-0" role="search">
+            <div class="input-group">
+              <input class="form-control search-box" type="search" placeholder="Search articles..."
+                aria-label="Search" />
+              <div class="input-group-append">
+                <button class="btn rounded-end" type="submit">
+                  <i class="fa-solid fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <ul class="navbar-nav button-nav navbar-expand-md mr-auto px-0 pl-md-1 text-nowrap">
+            <li class="nav-item">
+              <a href="#" class="btn btn-sm btn-success">
+                <i class="fa-solid fa-right-to-bracket pe-1"></i> Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-sm btn-success">
+                <i class="fa-solid fa-user-plus pe-1"></i> Register
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-lg-8 col-xl-9">
+          <main class="content" id="article-content">
+            <h2 class="article-title text-center text-md-start">A beautiful castle</h2>
+            <div class="row article-meta">
+              <div class="left-half col-sm-12 col-sm-7 col-lg-8">
+                <span class="author">
+                  <a href="author.html">
+                    <img src="assets/images/john.jpg" alt="John Doe" class="rounded-circle" />
+                    <span class="pl-1">by John Doe</span>
+                  </a>
+                </span>
+                <strong>·</strong>
+                <span class="date">Nov 19, 2022</span>
+              </div>
+              <div class="right-half col-sm-12 col-sm-5 col-lg-4">
+                <a class="comments" id="comments_status" href="#comments_container" title="4 comments"><i
+                    class="fa fa-comments mr-1"></i> 4 comments</a>
+              </div>
+            </div>
+            <div class="video-container">
+              <img src="assets/images/castle.jpg" class="poster" />
+              <video src="assets/videos/castle.mp4"></video>
+              
+              <div class="controls-wrapper">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <ul class="video-controls">
+                  <li>
+                    <input type="button" name="play-pause" value="Play" class="play" />
+                  </li>
+                  <li><a href="#" class="previous">Previous</a></li>
+                  <li><a href="#" class="next">Next</a></li>
+                  <li class="mute-toggle unmuted">
+                    <input type="checkbox" name="mute" />
+                  </li>
+                  <li>
+                    <input type="range" min="0" max="1" step="0.01" class="volume-slider" />
+                  </li>
+                  <li class="timer">
+                    <span class="current-time"></span><span>/</span><span class="duration"></span>
+                  </li>
+                  <li class="playback-rate">
+                    <span class="rate_display">Normal</span>
+                    <div class="piker">
+                      <ul class="dropdown-content" id="rate_selector">
+                        <li data-rate="0.5">0.5x</li>
+                        <li data-rate="0.75">0.75x</li>
+                        <li data-rate="1">Normal</li>
+                        <li data-rate="1.125">1.125x</li>
+                        <li data-rate="1.5">1.5x</li>
+                        <li data-rate="2">2x</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="fullscreen-container">
+                    <input type="button" name="screen-toggler" value="Fullscreen" class="toggle-fullscreen" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="video-synopsys pt-3">
+              <p>A video article. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum commodi quidem eligendi
+                doloremque dolorum nisi voluptates porro, assumenda autem quae accusantium.</p>
+            </div>
+
+            <div class="tag-cloud">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Repellat</a>
+              <a href="#">Doloribus</a>
+              <a href="#">Fugit</a>
+              <a href="#">Laudantium</a>
+            </div>
+
+            <div class="social-container">
+              <ul class="d-flex list-unstyled social-buttons justify-content-center justify-content-md-start">
+                <li class="me-1">
+                  <button class="share-button facebook btn btn-sm" title="Share this article on Facebook">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                  </button>
+                </li>
+                <li class="me-1">
+                  <button class="share-button twitter btn btn-sm" title="Share this article on Twitter">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                  </button>
+                </li>
+                <li>
+                  <button class="share-button linkedin btn btn-sm" title="Share this article on Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    Linkedin
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="comment-form-wrapper" id="comments_container">
+              <h3 class="comment-form-title">Leave a comment</h3>
+              <form action="#" id="commentForm" class="comment-form" method="post" accept-charset="utf-8"
+                novalidate="novalidate">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+                    data-rule-required="true" />
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                    data-rule-required="true" />
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Comment"
+                    data-rule-required="true"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Comment" class="btn btn-md btn-success w-100" />
+                </div>
+              </form>
+            </div>
+
+            <div class="comments mt-4">
+              <div class="card bg-light comment">
+                <h5 class="card-header">
+                  <span class="row">
+                    <span class="col-md-6 text-dark avatar">
+                      <img src="assets/images/kayden.jpg" alt="Kayden" class="rounded-circle" />Kayden Doe says:
+                    </span>
+                    <span class="col-md-6 text-dark d-none d-md-flex align-items-center justify-content-end">Nov 28,
+                      2022 at 23:32:15</span>
+                  </span>
+                </h5>
+                <div class="card-body bg-white p-2">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque vel diam vulputate, ornare justo vel, rutrum eros.
+                    Nam mollis iaculis lacus sit amet ornare. Interdum et
+                    malesuada fames ac ante ipsum primis in faucibus. Vivamus
+                    imperdiet neque et urna viverra placerat. Nulla facilisi.
+                  </p>
+                  <ul class="comment-actions list-unstyled">
+                    <li>
+                      <a href="#"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-trash"></i> Delete</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-regular fa-comments"></i> Reply</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="replies ps-4 mb-3">
+                <div class="card bg-light comment">
+                  <h5 class="card-header">
+                    <span class="row">
+                      <span class="col-md-6 text-dark avatar">
+                        <img src="assets/images/john.jpg" alt="John" class="rounded-circle" />John Doe says:
+                      </span>
+                      <span class="col-md-6 text-dark d-none d-md-flex align-items-center justify-content-end">Nov 28,
+                        2022 at 23:32:15</span>
+                    </span>
+                  </h5>
+                  <div class="card-body bg-white p-2">
+                    <p>Mountains, she had a last view back</p>
+                  </div>
+                </div>
+
+                <div class="card bg-light comment">
+                  <h5 class="card-header">
+                    <span class="row">
+                      <span class="col-md-6 text-dark avatar">
+                        <img src="assets/images/carmen.jpg" alt="Carmen" class="rounded-circle" />Carmen Smith says:
+                      </span>
+                      <span class="col-md-6 text-dark d-none d-md-flex align-items-center justify-content-end">Nov 28,
+                        2022 at 23:32:15</span>
+                    </span>
+                  </h5>
+                  <div class="card-body bg-white p-2">
+                    <p>Mountains, she had a last view back</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-light comment">
+                <h5 class="card-header">
+                  <span class="row">
+                    <span class="col-md-6 text-dark avatar">
+                      <img src="assets/images/kayden.jpg" alt="Kayden" class="rounded-circle" />Kayden Doe says:
+                    </span>
+                    <span class="col-md-6 text-dark d-none d-md-flex align-items-center justify-content-end">Nov 28,
+                      2022 at 23:32:15</span>
+                  </span>
+                </h5>
+                <div class="card-body bg-white p-2">
+                  <p>Mountains, she had a last view back</p>
+                  <ul class="comment-actions list-unstyled">
+                    <li>
+                      <a href="#"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-trash"></i> Delete</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-regular fa-comments"></i> Reply</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-lg-4 col-xl-3">
+          <aside class="sidebar mb-2">
+            <div class="newsletter">
+              <h3>Subscribe to our newsletter</h3>
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control form-control-sm"
+                    placeholder="Email address" />
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" value="Subscribe" class="btn btn-sm btn-success w-100" />
+                </div>
+              </form>
+            </div>
+
+            <div class="tabbed-sidebar">
+              <div class="tabbed-heading">
+                <ul class="nav nav-tabs" role="tablist" data-bs-tabs="tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#newest_posts" role="tab" data-bs-toggle="tab">Top</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#authors_list" role="tab" data-bs-toggle="tab">Authors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#categories" role="tab" data-bs-toggle="tab">Categories</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="newest_posts">
+                  <ul class="list-unstyled sidebar-list d-table">
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/castel.jpg" alt="A beautiful castle" class="img-thumbnail" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3>
+                          <a href="#">A beautiful castle</a>
+                        </h3>
+                        <p>
+                          Sentiments of surrounded friendship connection. Me
+                          or…
+                        </p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/butterfly2.jpg" alt="Who loves a butterfly?" class="img-thumbnail" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Who loves a butterfly?</a></h3>
+                        <p>
+                          Sentiments of surrounded friendship connection. Me
+                          or…
+                        </p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell">
+                        <a href="#">
+                          <img src="assets/images/code.jpg" alt="Learn to code" class="img-thumbnail" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Learn to code</a></h3>
+                        <p>
+                          Sentiments of surrounded friendship connection. Me
+                          or…
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="authors_list">
+                  <ul class="list-unstyled sidebar-list d-table">
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                          <img src="assets/images/john.jpg" alt="John Doe" class="img-thumbnail rounded-circle" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">John Doe</a></h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the…
+                        </p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                          <img src="assets/images/kayden.jpg" alt="Kayden Schiller"
+                            class="img-thumbnail rounded-circle" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Jane Smith</a></h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the…
+                        </p>
+                      </div>
+                    </li>
+                    <li class="d-table-row">
+                      <div class="thumbnail d-table-cell text-center">
+                        <a href="#">
+                          <img src="assets/images/carmen.jpg" alt="Carmen Romaguera"
+                            class="img-thumbnail rounded-circle" />
+                        </a>
+                      </div>
+                      <div class="text d-table-cell">
+                        <h3><a href="#">Alice Star</a></h3>
+                        <p>
+                          If you are going to use a passage of Lorem Ipsum,
+                          you…
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="categories">
+                  <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Uncategorised</span>
+                      <span class="badge">26</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Technology</span>
+                      <span class="badge">3</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Business</span>
+                      <span class="badge">4</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <span>Sports</span>
+                      <span class="badge">0</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer-wrapper">
+      <div class="footer-copyright">
+        <p class="text-center">© Brave CMS, 2023. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/share.js"></script>
+  <script>
+    window.cookieconsent.initialise({
+      container: document.getElementById("cookieconsent"),
+      palette: {
+        popup: { background: "#323232" },
+        button: { background: "#008057" },
+      },
+      revokable: true,
+      onStatusChange: function (status) {
+        console.log(
+          this.hasConsented() ? "enable cookies" : "disable cookies"
+        );
+      },
+      position: "bottom-left",
+      theme: "classic",
+      secure: true,
+      content: {
+        header: "Cookies used on the website!",
+        message: "This website uses cookies to improve your experience.",
+        dismiss: "Accept cookies!",
+        allow: "Allow cookies",
+        deny: "Decline",
+        link: "Learn more",
+        close: "&#x274c;",
+        policy: "Cookie Policy",
+        target: "_blank",
+      },
+    });
+  </script>
+</body>
+
+</html>
