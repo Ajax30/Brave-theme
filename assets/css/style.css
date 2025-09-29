@@ -21376,29 +21376,30 @@ h4,
 
 div.author {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  margin: 20px 0 0 6px;
+  margin-top: 15px;
 }
 div.author h1, div.author .h1 {
-  order: 2;
-  margin: 0 0 0 5px;
-  font-size: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 div.author img {
-  height: 44px;
+  height: 80px;
   width: auto;
 }
 
 .bio {
   color: #566f86;
-  border-left: 4px solid #808080;
-  margin: 0.75em 0 2rem 0;
-  padding: 0 0.75em;
+  margin: 0.75em auto 1rem auto;
+  padding: 0 0.5em;
   font-size: 14px;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .bio {
-    width: 70%;
+    width: 90%;
   }
 }
 
